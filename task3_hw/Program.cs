@@ -6,14 +6,14 @@ Console.Clear();
 Console.WriteLine("Найдите наибольший общий делитель чисел M и N");
 int m = InputInt("Введите M: ");
 int n = InputInt("Введите N: ");
-Console.WriteLine($"Наибольший общий делитель чисел {m} и {n} равен {nod(m, n)}");
+Console.WriteLine($"Наибольший общий делитель чисел {m} и {n} равен {GreatestCommonDenominator(m, n)}");
 
-int nod(int m, int n)
+int GreatestCommonDenominator(int m, int n)
 {
     if (n == 0)
         return m;
     else
-        return nod(n, m % n);
+        return GreatestCommonDenominator(n, m % n);
 }
 
 int InputInt(string output)
