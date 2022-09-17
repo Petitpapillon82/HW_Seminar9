@@ -14,14 +14,6 @@ int InputInt(string output)
     Console.Write(output);
     return int.Parse(Console.ReadLine());
 }
-
-// int FindSum(int m, int n)
-// {
-//     if (m == n)
-//         return n;
-//     return n + FindSum(m, n - 1);
-// }
-
 int FindSum(int m, int n) 
 {
     if(m > n) 
