@@ -28,3 +28,18 @@ int InputNumbers(string input)
     return output;
 }
 
+//ВАРИАНТ ОТ ПРЕПОДАВАТЕЛЯ:
+// EvenNumbers(m, n);
+// void EvenNumbers(int m, int n)
+// {
+// string delimiter = m == n || m == n - 1 ? "" : ",";
+// if (m <= n)
+// {
+// if (m % 2 == 0 && m != 0)
+// {
+// Console.Write($"{m}{delimiter} ");
+
+// }
+// EvenNumbers(m + 1, n);
+// }
+// }
